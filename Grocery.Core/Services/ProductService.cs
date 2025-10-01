@@ -4,7 +4,7 @@ using Grocery.Core.Models;
 
 namespace Grocery.Core.Services
 {
-    public class ProductService : IProductService
+    public class ProductService : IGrocaryListItems
     {
         private readonly IProductRepository _productRepository;
 

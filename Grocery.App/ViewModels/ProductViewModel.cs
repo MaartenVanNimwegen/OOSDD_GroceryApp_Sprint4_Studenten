@@ -8,7 +8,7 @@ namespace Grocery.App.ViewModels
     {
         public ObservableCollection<Product> Products { get; set; }
 
-        public ProductViewModel(IProductService productService)
+        public ProductViewModel(IGrocaryListItems productService)
         {
             Products = new(productService.GetAll());
         }

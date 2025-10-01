@@ -28,7 +28,7 @@ namespace Grocery.App
 #endif
             builder.Services.AddSingleton<IGroceryListService, GroceryListService>();
             builder.Services.AddSingleton<IGroceryListItemsService, GroceryListItemsService>();
-            builder.Services.AddSingleton<IProductService, ProductService>();
+            builder.Services.AddSingleton<IGrocaryListItems, ProductService>();
             builder.Services.AddSingleton<IAuthService, AuthService>();
             builder.Services.AddSingleton<IClientService, ClientService>();
             builder.Services.AddSingleton<IFileSaverService, FileSaverService>();

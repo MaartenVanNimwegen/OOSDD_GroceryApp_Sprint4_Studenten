@@ -16,7 +16,7 @@ namespace Grocery.App.ViewModels
         public ObservableCollection<BoughtProducts> BoughtProductsList { get; set; } = [];
         public ObservableCollection<Product> Products { get; set; }
 
-        public BoughtProductsViewModel(IBoughtProductsService boughtProductsService, IProductService productService)
+        public BoughtProductsViewModel(IBoughtProductsService boughtProductsService, IGrocaryListItems productService)
         {
             _boughtProductsService = boughtProductsService;
             Products = new(productService.GetAll());

@@ -13,7 +13,7 @@ namespace Grocery.App.ViewModels
     public partial class GroceryListItemsViewModel : BaseViewModel
     {
         private readonly IGroceryListItemsService _groceryListItemsService;
-        private readonly IProductService _productService;
+        private readonly IGrocaryListItems _productService;
         private readonly IFileSaverService _fileSaverService;
         private string searchText = "";
 
@@ -25,7 +25,7 @@ namespace Grocery.App.ViewModels
         [ObservableProperty]
         string myMessage;
 
-        public GroceryListItemsViewModel(IGroceryListItemsService groceryListItemsService, IProductService productService, IFileSaverService fileSaverService)
+        public GroceryListItemsViewModel(IGroceryListItemsService groceryListItemsService, IGrocaryListItems productService, IFileSaverService fileSaverService)
         {
             _groceryListItemsService = groceryListItemsService;
             _productService = productService;
