@@ -2,7 +2,7 @@
 
 namespace Grocery.Core.Interfaces.Services
 {
-    public interface IProductService
+    public interface IGrocaryListItems
     {
         public List<Product> GetAll();
 
